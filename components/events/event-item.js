@@ -8,10 +8,11 @@ export default function EventItem(props) {
     year: 'numeric'
   })
   const formattedAddress = location.replace(', ', '\n');
+  const exploreLink = `/events/${id}`;
 
   return (
     <li>
-      <img src={`/${image}`} alt="" />
+      <img src={`/${image}`} alt={title} />
       <div>
         <div>
           <h2>{title}</h2>
@@ -26,6 +27,6 @@ export default function EventItem(props) {
           <Link href='/'>Explore Event</Link>
         </div>
       </div>
-    </li>;
-  )
+    </li>
+  );
 }
