@@ -8,7 +8,7 @@ export default function LogisticsItem(props) {
       <span className={classes.icon}>
         <Icon />
       </span>
+      <span className={classes.content}>{props.children}</span>
     </li>
   );
 }
-
